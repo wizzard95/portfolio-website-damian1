@@ -10,7 +10,7 @@ import skillsImg5 from './assets/tailwind-css-logo.svg';
  
 
 import SkillsImg11  from './assets/nodejs-icon.svg';
-import SkillsImg12 from './assets/Socket-io.svg';
+import SkillsImg12 from './assets/socket-io.svg';
 import SkillsImg14 from './assets/python-5.svg';
 import SkillsImg15 from './assets/git-logo.svg';
 import SkillsImg16 from './assets/postman-logo.svg';
