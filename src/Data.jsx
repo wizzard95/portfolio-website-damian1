@@ -364,9 +364,10 @@ export const portfolio = [
     title: 'Chat en tiempo real',
     /* title: 'Food Product Design', */
     description:
-      `Proyecto hecho con ReactJS y tailwindcss `,
+      `Proyecto realizado con Nodejs, socket.io, express, React y MongoDB.
+       Puedes crear o entrar a salas de chat, enviar y recibir mensajes `,
     skills: [SkillsImg11, SkillsImg12, SkillsImg22, skillsImg4 ],
-    link: '',
+    link: 'https://realtime-chat-app-omega-tan.vercel.app/',
   },
 
   {
