@@ -60,7 +60,7 @@ const About = () => {
               })}
             </div>
               <div className="separator"></div>  
-                  <h3 className="skills-title">Herramientas</h3>
+                  <h3 className="skills-title">Herramientas y Despliegue</h3>
                   <div className="skills-items grid">
              {skill.map((val) => {
                 if(val.category === 'FrontTools'){

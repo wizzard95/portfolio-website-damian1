@@ -21,6 +21,9 @@ import SkillsImg20 from './assets/bootstrap-logo.svg';
 import SkillsImg21 from './assets/xampp-logo.svg';
 import SkillsImg22 from './assets/expressjs.svg';
 import SkillsImg23 from './assets/vitejs-logo.svg';
+import SkillsImg24 from './assets/vercel-logo.svg';
+import SkillsImg25 from './assets/github-logo.svg';
+import SkillsImg26 from './assets/render-logo1.svg';
 
 
 import projectImg1 from './assets/clima1.png';
@@ -270,6 +273,28 @@ export const skill = [
     level: '',
     category: 'FrontTools',
   },
+  {
+    id: 24,
+    img: SkillsImg24,
+    title: 'Vercel',
+    level: '',
+    category: 'FrontTools',
+  },
+   {
+    id: 25,
+    img: SkillsImg25,
+    title: 'GitHub',
+    level: '',
+    category: 'FrontTools',
+  },
+     {
+    id: 26,
+    img: SkillsImg26,
+    title: 'Render',
+    level: '',
+    category: 'FrontTools',
+  }
+  
 ];
 
 export const resume = [
