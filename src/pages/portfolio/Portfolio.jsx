@@ -6,7 +6,7 @@ const Portfolio = () => {
   return (
     <section className="portfolio section">
       <h2 className="section-title">
-          Mi <span>Portfolio</span>
+          Mis <span>Proyectos</span>
       </h2>
       <div className="portfolio-container container grid">
           {portfolio.map(({id, img, title, description, skills, link}) => {
