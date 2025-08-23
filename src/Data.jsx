@@ -24,11 +24,12 @@ import SkillsImg23 from './assets/vitejs-logo.svg';
 import SkillsImg24 from './assets/vercel-logo.svg';
 import SkillsImg25 from './assets/github-logo.svg';
 import SkillsImg26 from './assets/render-logo1.svg';
-
+import SkillsImg27 from './assets/flet.jpg';
+import SkillsImg28 from './assets/sqlite-logo.svg';
 
 import projectImg1 from './assets/clima1.png';
 import projectImg2 from './assets/chat2.jpg';
-import projectImg3 from './assets/project-3.jpg';
+import projectImg3 from './assets/agenda.svg';
 import projectImg4 from './assets/project-4.jpg';
 import projectImg5 from './assets/project-5.jpg';
 
@@ -378,7 +379,7 @@ export const portfolio = [
     /* title: 'Coffee Website', */
     description:
       `Se muestran el estado del clima en alguna ciudad del mundo
-       a traves del consumo de la API de OpenWeatherMap`,
+       a traves del consumo de la API de OpenWeatherMap.`,
     skills: [SkillsImg1, SkillsImg2, SkillsImg3],
     link: 'https://wizzard95.github.io/app-clima/',
   },
@@ -390,7 +391,8 @@ export const portfolio = [
     /* title: 'Food Product Design', */
     description:
       `Proyecto realizado con Nodejs, socket.io, express, React y MongoDB.
-       Puedes crear o entrar a salas de chat, enviar y recibir mensajes `,
+       Puedes crear o entrar a salas de chat, enviar y recibir mensajes.
+       Backend-End desplegado con Render y Front-End con Vercel. `,
     skills: [SkillsImg11, SkillsImg12, SkillsImg22, skillsImg4 ],
     link: 'https://realtime-chat-app-omega-tan.vercel.app/',
   },
@@ -398,12 +400,13 @@ export const portfolio = [
   {
     id: 3,
     img: projectImg3,
-    title: 'Proyecto 3',
+    title: 'Agenda de contactos',
     /* title: 'Restaurant Landing Page', */
     description:
-      'Short description of the project that was carried out in this portfolio.',
-    skills: [SkillsImg1, SkillsImg2, SkillsImg3],
-    link: '',
+      `Aplicación de escritorio para registro y gestión de contactos
+      hecha con Python junto al Framework Flet y SQLite. Despliegue a traves de Render`,
+    skills: [ SkillsImg14, SkillsImg27, SkillsImg28 ],
+    link: 'https://crudpythonflet-1.onrender.com/',
   },
 
   {
