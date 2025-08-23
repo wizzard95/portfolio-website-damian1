@@ -18,11 +18,10 @@ const home = () => {
       <span> Damián Acuña</span> <br />Full-Stack Dev
       </h1>
       <p className="home-description">
-      Soy Desarrollador Full Stack en Chile.
-      Integro una visión minimalista en el diseño
-      con un desarrollo sólido en el backend,
-      creando aplicaciones eficientes que mejoran la productividad y
-       la experiencia de los usuarios.
+ Me especializo en desarrollar aplicaciones web escalables y 
+ eficientes, combinando interfaces modernas, backends robustos y
+  buenas prácticas para optimizar procesos y mejorar la experiencia 
+  del usuario.
 
       </p>
   
