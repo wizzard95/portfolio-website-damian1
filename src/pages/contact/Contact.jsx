@@ -108,7 +108,7 @@ const sendEmail = (e) => {
             </span>
             <div>
               <h3 className="contact-title">Telefono</h3>
-              <p className="contact-data">+569 8888888</p>
+              <p className="contact-data">+569 98760317</p>
             </div>
           </div>
         </div>

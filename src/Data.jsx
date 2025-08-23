@@ -26,11 +26,13 @@ import SkillsImg25 from './assets/github-logo.svg';
 import SkillsImg26 from './assets/render-logo1.svg';
 import SkillsImg27 from './assets/flet.jpg';
 import SkillsImg28 from './assets/sqlite-logo.svg';
+import SkillsImg29 from './assets/mongodb-logo.svg';
+
 
 import projectImg1 from './assets/clima1.png';
 import projectImg2 from './assets/chat2.jpg';
 import projectImg3 from './assets/agenda.svg';
-import projectImg4 from './assets/project-4.jpg';
+import projectImg4 from './assets/hospital.png';
 import projectImg5 from './assets/project-5.jpg';
 
 
@@ -393,7 +395,7 @@ export const portfolio = [
       `Proyecto realizado con Nodejs, socket.io, express, React y MongoDB.
        Puedes crear o entrar a salas de chat, enviar y recibir mensajes.
        Backend-End desplegado con Render y Front-End con Vercel. `,
-    skills: [SkillsImg11, SkillsImg12, SkillsImg22, skillsImg4 ],
+    skills: [SkillsImg11, SkillsImg12, SkillsImg22, skillsImg4, SkillsImg29 ],
     link: 'https://realtime-chat-app-omega-tan.vercel.app/',
   },
 
@@ -412,24 +414,24 @@ export const portfolio = [
   {
     id: 4,
     img: projectImg4,
-    title: 'Proyecto 4',
+    title: 'Sistema de Gestión Hospitalario',
     /* title: 'Barbershop Website', */
     description:
-      'Short description of the project that was carried out in this portfolio.',
-    skills: [skillsImg4, skillsImg5],
+      'En desarrollo................',
+    skills: [SkillsImg11, SkillsImg22, skillsImg4, SkillsImg17, SkillsImg21 ],
     link: '',
   },
 
-  {
+/*   {
     id: 5,
     img: projectImg5,
-    title: 'Proyecto 5',
+    title: 'Proyecto 5', */
     /* title: 'Construction Landing Page', */
-    description:
+  /*   description:
       'Short description of the project that was carried out in this portfolio.',
     skills: [SkillsImg1, SkillsImg2, SkillsImg3],
     link: '',
-  },
+  }, */
 ];
 
 export const themes = [

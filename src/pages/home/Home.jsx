@@ -18,10 +18,11 @@ const home = () => {
       <span> Damián Acuña</span> <br />Front-End Dev
       </h1>
       <p className="home-description">
-       Soy Desarrallor Web front-end en Chile.
-      Combino estética minimalista con código limpio
-       para crear experiencias que mejoran la productividad y
-        satisfacción de usuarios.
+       Soy Desarrollador Web Front-End en Chile.
+        Me especializo en combinar una estética minimalista
+         con un código limpio y escalable, creando experiencias digitales
+          que optimizan la productividad y mejoran la satisfacción de 
+          los usuarios.
 
       </p>
   
@@ -40,8 +41,8 @@ const home = () => {
         */}
 
    
-        <div className="icon-home"><FaGithub /></div>
-        <div className="icon-home"><FaLinkedin /></div>
+       <a href="https://github.com/wizzard95"> <div className="icon-home"><FaGithub /></div></a>
+       <a href="https://www.linkedin.com/in/dami%C3%A1n-acu%C3%B1a-646705244/"> <div className="icon-home"><FaLinkedin /></div></a>
         <div className="icon-home"><RiMailLine /></div>
 
 
