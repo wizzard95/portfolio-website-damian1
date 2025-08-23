@@ -15,14 +15,14 @@ const home = () => {
 
     <div className="home-content">
       <h1 className="home-title">
-      <span> Damián Acuña</span> <br />Front-End Dev
+      <span> Damián Acuña</span> <br />Full-Stack Dev
       </h1>
       <p className="home-description">
-       Soy Desarrollador Web Front-End en Chile.
-        Me especializo en combinar una estética minimalista
-         con un código limpio y escalable, creando experiencias digitales
-          que optimizan la productividad y mejoran la satisfacción de 
-          los usuarios.
+      Soy Desarrollador Full Stack en Chile.
+      Integro una visión minimalista en el diseño
+      con un desarrollo sólido en el backend,
+      creando aplicaciones eficientes que mejoran la productividad y
+       la experiencia de los usuarios.
 
       </p>
   
