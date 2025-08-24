@@ -296,6 +296,13 @@ export const skill = [
     title: 'Render',
     level: '',
     category: 'FrontTools',
+  },
+  {
+    id: 27,
+    img: SkillsImg29,
+    title: 'MongoDB',
+    level: '',
+    category: 'BackendDev',
   }
   
 ];
@@ -393,7 +400,8 @@ export const portfolio = [
     /* title: 'Food Product Design', */
     description:
       `Proyecto realizado con Nodejs, socket.io, express, React y MongoDB.
-       Puedes crear o entrar a salas de chat, enviar y recibir mensajes.
+       Puedes crear o entrar a salas de chat, enviar y recibir mensajes,
+       además puedes mover los componentes de lugar a traves de Drag and Drop.
        Backend-End desplegado con Render y Front-End con Vercel. `,
     skills: [SkillsImg11, SkillsImg12, SkillsImg22, skillsImg4, SkillsImg29 ],
     link: 'https://realtime-chat-app-omega-tan.vercel.app/',
