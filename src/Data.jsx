@@ -33,7 +33,8 @@ import projectImg1 from './assets/clima1.png';
 import projectImg2 from './assets/chat2.jpg';
 import projectImg3 from './assets/agenda.svg';
 import projectImg4 from './assets/hospital.png';
-import projectImg5 from './assets/project-5.jpg';
+/* import projectImg5 from './assets/project-5.jpg'; */
+import projectImg6 from './assets/notes.svg';
 
 
 
@@ -381,20 +382,18 @@ navegadores.<li/>
 ];
 
 export const portfolio = [
-  {
-    id: 1,
-    img: projectImg1,
-    title: 'ClimApp',
-    /* title: 'Coffee Website', */
+   {
+    id: 5,
+    img: projectImg4,
+    title: 'Sistema de Gestión Hospitalario',
+    /* title: 'Barbershop Website', */
     description:
-      `Se muestran el estado del clima en alguna ciudad del mundo
-       a traves del consumo de la API de OpenWeatherMap.`,
-    skills: [SkillsImg1, SkillsImg2, SkillsImg3],
-    link: 'https://wizzard95.github.io/app-clima/',
+      'En desarrollo................',
+    skills: [SkillsImg11, SkillsImg22, skillsImg4, SkillsImg17, SkillsImg21 ],
+    link: '',
   },
-
-  {
-    id: 2,
+    {
+    id: 3,
     img: projectImg2,
     title: 'Chat en tiempo real',
     /* title: 'Food Product Design', */
@@ -406,9 +405,35 @@ export const portfolio = [
     skills: [SkillsImg11, SkillsImg12, SkillsImg22, skillsImg4, SkillsImg29 ],
     link: 'https://realtime-chat-app-omega-tan.vercel.app/',
   },
+  {
+    id: 1,
+    img: projectImg6,
+    title: 'NOTAS',
+    description:
+      `Aplicación MERN para gestionar tareas con autenticación de usuarios.
+Permite listar, crear, editar y eliminar tareas personales.
+Tras iniciar sesión, carga tus tareas y las muestra en una cuadrícula.
+Maneja estados de carga y errores al comunicarse con el servidor.`,
+    skills: [SkillsImg11, SkillsImg22, skillsImg4, SkillsImg29 ],
+    link: 'https://mern-crud-auth-frontend.vercel.app/',
+  },
+  {
+    id: 2,
+    img: projectImg1,
+    title: 'ClimApp',
+    /* title: 'Coffee Website', */
+    description:
+      `Se muestran el estado del clima en alguna ciudad del mundo
+       a traves del consumo de la API de OpenWeatherMap.`,
+    skills: [SkillsImg1, SkillsImg2, SkillsImg3],
+    link: 'https://wizzard95.github.io/app-clima/',
+  },
+
+
+
 
   {
-    id: 3,
+    id: 4,
     img: projectImg3,
     title: 'Agenda de contactos',
     /* title: 'Restaurant Landing Page', */
@@ -419,16 +444,7 @@ export const portfolio = [
     link: 'https://crudpythonflet-1.onrender.com/',
   },
 
-  {
-    id: 4,
-    img: projectImg4,
-    title: 'Sistema de Gestión Hospitalario',
-    /* title: 'Barbershop Website', */
-    description:
-      'En desarrollo................',
-    skills: [SkillsImg11, SkillsImg22, skillsImg4, SkillsImg17, SkillsImg21 ],
-    link: '',
-  },
+ 
 
 /*   {
     id: 5,

@@ -31,13 +31,7 @@ const home = () => {
                  <RiDownload2Line />
                </span>
         </a>
-   {/*    <Link to="/about" className="button"><br />
-      Mas acerca de mi
-      <span className="button-icon">
-        <RiArrowRightLine />
-      </span>
-      </Link>
-        */}
+  
 
    
        <a href="https://github.com/wizzard95"> <div className="icon-home"><FaGithub /></div></a>
