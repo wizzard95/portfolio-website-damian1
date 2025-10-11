@@ -25,7 +25,7 @@ const home = () => {
 
       </p>
   
-        <a href={Cv} download='' target='blank_' className="button"><br />
+        <a href={Cv}/*  download=''  */target='blank_' className="button"><br />
                 Descargar Cv
                <span className="button-icon">
                  <RiDownload2Line />
