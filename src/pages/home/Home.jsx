@@ -1,5 +1,5 @@
 import Cv from '../../pdf/cvdefdamian.pdf';
-import Profile from "../../assets/home2.jpg"; 
+import Profile from "../../assets/yo.jpeg"; 
 import { Link } from "react-router";
 import { RiArrowRightLine, RiDownload2Line, RiMailLine, } from "react-icons/ri";
 import { FaGithub, FaLinkedin  } from "react-icons/fa";
