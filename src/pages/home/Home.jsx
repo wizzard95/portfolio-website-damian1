@@ -1,4 +1,4 @@
-import Cv from '../../pdf/cvdefdamian.pdf';
+import Cv from '../../pdf/cv_damian_acuñav.pdf';
 import Profile from "../../assets/yo.jpeg"; 
 import { Link } from "react-router";
 import { RiArrowRightLine, RiDownload2Line, RiMailLine, } from "react-icons/ri";
