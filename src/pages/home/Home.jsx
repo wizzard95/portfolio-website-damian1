@@ -1,4 +1,4 @@
-import Cv from '../../pdf/cv_damian_acuñav.pdf';
+import Cv from '../../pdf/cv_damian_acuña_vera1.pdf';
 import Profile from "../../assets/yo.jpeg"; 
 import { Link } from "react-router";
 import { RiArrowRightLine, RiDownload2Line, RiMailLine, } from "react-icons/ri";
@@ -15,7 +15,7 @@ const home = () => {
 
     <div className="home-content">
       <h1 className="home-title">
-      <span> Damián Acuña</span> <br />Full-Stack Dev
+      <span> Damián Acuña</span> <br />FullStack Dev
       </h1>
       <p className="home-description">
  Me especializo en desarrollar aplicaciones web escalables y 
