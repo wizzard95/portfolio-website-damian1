@@ -7,8 +7,8 @@
 }
 
 .home-img{
-    height: calc(100vh - 5rem);
-    width: 100%;
+    height: calc(100vh - 20rem);
+    width: 70%;
     object-fit: cover;
     border-radius: 2rem;
     z-index: 10;
