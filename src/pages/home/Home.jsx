@@ -30,14 +30,17 @@ const home = () => {
                <span className="button-icon">
                  <RiDownload2Line />
                </span>
+
+               
         </a>
   
-
-   
-       <a href="https://github.com/wizzard95"> <div className="icon-home"><FaGithub /></div></a>
-       <a href="https://www.linkedin.com/in/dami%C3%A1n-acu%C3%B1a-646705244/"> <div className="icon-home"><FaLinkedin /></div></a>
-        <div className="icon-home"><RiMailLine /></div>
-
+  <div>
+       <a href="https://github.com/wizzard95" target='_blank'> <div className="icon-home"><FaGithub /></div></a>
+       <a href="https://www.linkedin.com/in/dami%C3%A1n-acu%C3%B1a-646705244/" target='_blank'> <div className="icon-home"><FaLinkedin /></div></a>
+      {/*  <div className="icon-home" target='_blank'><Link to='./contact'></Link><RiMailLine /></div> */}
+      <a href="/contact"><div className="icon-home"><RiMailLine /></div></a>
+  </div>
+  
 
     </div>
    
