@@ -57,13 +57,13 @@ export const links = [
   },
 
   {
-    name: 'Yo',
+    name: 'Sobre Mi',
     icon: <FaUser className='nav-icon' />,
     path: '/about',
   },
 
   {
-    name: 'Portfolio',
+    name: 'Proyectos',
     icon: <FaFolderOpen className='nav-icon' />,
     path: '/portfolio',
   },
