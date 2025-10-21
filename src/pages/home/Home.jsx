@@ -1,4 +1,4 @@
-import Cv from '../../pdf/cv_damian_acuña_vera1.pdf';
+import Cv from '../../pdf/cv-damian-acuña-dvfs.pdf';
 import Profile from "../../assets/yo.jpeg"; 
 import { Link } from "react-router";
 import { RiArrowRightLine, RiDownload2Line, RiMailLine, } from "react-icons/ri";
@@ -34,7 +34,7 @@ const home = () => {
                
         </a>
   
-  <div>
+  <div className='contactos'>
        <a href="https://github.com/wizzard95" target='_blank'> <div className="icon-home"><FaGithub /></div></a>
        <a href="https://www.linkedin.com/in/dami%C3%A1n-acu%C3%B1a-646705244/" target='_blank'> <div className="icon-home"><FaLinkedin /></div></a>
       {/*  <div className="icon-home" target='_blank'><Link to='./contact'></Link><RiMailLine /></div> */}
