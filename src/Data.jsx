@@ -382,15 +382,26 @@ navegadores.<li/>
 ];
 
 export const portfolio = [
-   {
+/*    {
     id: 5,
     img: projectImg4,
     title: 'Sistema de Gestión Hospitalario',
-    /* title: 'Barbershop Website', */
+   
     description:
       'En desarrollo................',
     skills: [SkillsImg11, SkillsImg22, skillsImg4, SkillsImg17, SkillsImg21 ],
     link: '',
+  }, */{
+  id: 1,
+    img: projectImg6,
+    title: 'NOTAS',
+    description:
+      `Aplicación MERN para gestionar tareas con autenticación de usuarios.
+Permite listar, crear, editar y eliminar tareas personales.
+Tras iniciar sesión, carga tus tareas y las muestra en una cuadrícula.
+Maneja estados de carga y errores al comunicarse con el servidor.`,
+    skills: [SkillsImg11, SkillsImg22, skillsImg4, SkillsImg29 ],
+    link: 'https://mern-crud-auth-frontend.vercel.app/',
   },
     {
     id: 3,
@@ -405,18 +416,8 @@ export const portfolio = [
     skills: [SkillsImg11, SkillsImg12, SkillsImg22, skillsImg4, SkillsImg29 ],
     link: 'https://realtime-chat-app-omega-tan.vercel.app/',
   },
-  {
-    id: 1,
-    img: projectImg6,
-    title: 'NOTAS',
-    description:
-      `Aplicación MERN para gestionar tareas con autenticación de usuarios.
-Permite listar, crear, editar y eliminar tareas personales.
-Tras iniciar sesión, carga tus tareas y las muestra en una cuadrícula.
-Maneja estados de carga y errores al comunicarse con el servidor.`,
-    skills: [SkillsImg11, SkillsImg22, skillsImg4, SkillsImg29 ],
-    link: 'https://mern-crud-auth-frontend.vercel.app/',
-  },
+
+    
   {
     id: 2,
     img: projectImg1,
