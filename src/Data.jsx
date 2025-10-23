@@ -401,7 +401,7 @@ Permite listar, crear, editar y eliminar tareas personales.
 Tras iniciar sesión, carga tus tareas y las muestra en una cuadrícula.
 Maneja estados de carga y errores al comunicarse con el servidor.`,
     skills: [SkillsImg11, SkillsImg22, skillsImg4, SkillsImg29 ],
-    link: 'https://mern-crud-auth-frontend.vercel.app/',
+    link: 'https://mern-auth-crud-pi.vercel.app/',
   },
     {
     id: 3,

@@ -53,6 +53,8 @@ const Themes = () => {
     localStorage.setItem('theme', theme);
   }, [theme]);
 
+  
+
   return (
     <div className={`${showSwitcher ? 'show-switcher' : ''} style-switcher`}>
 

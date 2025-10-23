@@ -54,7 +54,7 @@
 }
 .icon-home{
     position: relative;
-    top: -5px;
+    top: 15px;
     display: inline;
     padding-inline: 5px;
     margin-left: 20px;
@@ -62,9 +62,11 @@
     background-color: transparent;
     border-radius: 100%;
     transition: transform 0.3s ease;
+    /* background-color: rgb(255, 255, 255); */
 
 }
+.icon-home:hover{
+   /*  background-color: red; */
+    transform: scale(3rem)
+}
 
-/* .contactos a {
-    background-color: red;
-} */
