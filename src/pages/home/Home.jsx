@@ -1,4 +1,4 @@
-import Cv from '../../pdf/cv-damian-acuña-dvfs.pdf';
+import Cv from '../../pdf/cv_damian_acuña_fullstack.pdf';
 import Profile from "../../assets/yo.jpeg"; 
 import { Link } from "react-router";
 import { RiArrowRightLine, RiDownload2Line, RiMailLine, } from "react-icons/ri";
