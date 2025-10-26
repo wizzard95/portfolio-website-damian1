@@ -32,9 +32,10 @@ import SkillsImg29 from './assets/mongodb-logo.svg';
 import projectImg1 from './assets/clima1.png';
 import projectImg2 from './assets/chat2.jpg';
 import projectImg3 from './assets/agenda.svg';
-import projectImg4 from './assets/hospital.png';
+/* import projectImg4 from './assets/hospital.png'; */
 /* import projectImg5 from './assets/project-5.jpg'; */
 import projectImg6 from './assets/notes.svg';
+import projectImg7 from './assets/appnotas.png'
 
 
 
@@ -393,7 +394,7 @@ export const portfolio = [
     link: '',
   }, */{
   id: 1,
-    img: projectImg6,
+    img: projectImg7,
     title: 'NOTAS',
     description:
       `Aplicación MERN para gestionar tareas con autenticación de usuarios.
