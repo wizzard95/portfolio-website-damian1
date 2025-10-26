@@ -403,11 +403,11 @@ Maneja estados de carga y errores al comunicarse con el servidor.`,
     skills: [SkillsImg11, SkillsImg22, skillsImg4, SkillsImg29 ],
     link: 'https://mern-auth-crud-pi.vercel.app/',
   },
-    {
+/*     {
     id: 3,
     img: projectImg2,
     title: 'Chat en tiempo real',
-    /* title: 'Food Product Design', */
+  
     description:
       `Proyecto realizado con Nodejs, socket.io, express, React y MongoDB.
        Puedes crear o entrar a salas de chat, enviar y recibir mensajes,
@@ -415,7 +415,7 @@ Maneja estados de carga y errores al comunicarse con el servidor.`,
        Backend-End desplegado con Render y Front-End con Vercel. `,
     skills: [SkillsImg11, SkillsImg12, SkillsImg22, skillsImg4, SkillsImg29 ],
     link: 'https://realtime-chat-app-omega-tan.vercel.app/',
-  },
+  }, */
 
     
   {
