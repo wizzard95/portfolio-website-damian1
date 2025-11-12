@@ -425,8 +425,10 @@ Maneja estados de carga y errores al comunicarse con el servidor.`,
     title: 'ClimApp',
     /* title: 'Coffee Website', */
     description:
-      `Se muestran el estado del clima en alguna ciudad del mundo
-       a traves del consumo de la API de OpenWeatherMap.`,
+      `Se muestran el estado del clima e información meteorologica 
+      de alguna ciudad del mundo 
+      a traves del consumo de la API de OpenWeatherMap. se adapta
+       a cualquier dispositivo ya sea pc, tablet y móvil.`,
     skills: [SkillsImg1, SkillsImg2, SkillsImg3, skillsImg5],
     link: 'https://wizzard95.github.io/API-CLIMA-OWM/',
   },
