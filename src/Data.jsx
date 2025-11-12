@@ -401,7 +401,7 @@ export const portfolio = [
 Permite listar, crear, editar y eliminar tareas personales.
 Tras iniciar sesión, carga tus tareas y las muestra en una cuadrícula.
 Maneja estados de carga y errores al comunicarse con el servidor.`,
-    skills: [SkillsImg11, SkillsImg22, skillsImg4, SkillsImg29 ],
+    skills: [SkillsImg11, SkillsImg22, skillsImg4,skillsImg5, SkillsImg29 ],
     link: 'https://mern-auth-crud-pi.vercel.app/',
   },
 /*     {
@@ -427,7 +427,7 @@ Maneja estados de carga y errores al comunicarse con el servidor.`,
     description:
       `Se muestran el estado del clima en alguna ciudad del mundo
        a traves del consumo de la API de OpenWeatherMap.`,
-    skills: [SkillsImg1, SkillsImg2, SkillsImg3],
+    skills: [SkillsImg1, SkillsImg2, SkillsImg3, skillsImg5],
     link: 'https://wizzard95.github.io/API-CLIMA-OWM/',
   },
 
