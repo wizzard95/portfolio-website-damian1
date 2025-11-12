@@ -428,7 +428,7 @@ Maneja estados de carga y errores al comunicarse con el servidor.`,
       `Se muestran el estado del clima en alguna ciudad del mundo
        a traves del consumo de la API de OpenWeatherMap.`,
     skills: [SkillsImg1, SkillsImg2, SkillsImg3],
-    link: 'https://wizzard95.github.io/app-clima/',
+    link: 'https://wizzard95.github.io/API-CLIMA-OWM/',
   },
 
 
