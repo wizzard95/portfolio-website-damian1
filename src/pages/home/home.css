@@ -62,11 +62,11 @@
     background-color: transparent;
     border-radius: 100%;
     transition: transform 0.3s ease;
-    /* background-color: rgb(255, 255, 255); */
+    color: rgb(36, 169, 140);
 
 }
 .icon-home:hover{
-   /*  background-color: red; */
-    transform: scale(3rem)
+    color: rgb(19, 168, 66);
+    
 }
 
