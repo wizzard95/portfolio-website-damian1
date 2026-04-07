@@ -314,7 +314,7 @@ export const resume = [
     id: 1,
     category: 'experience',
     icon: <RiBriefcase4Fill />,
-    year: 'Julio 2024 - Presente',
+    year: 'Agosto 2024 - Noviembre 2025',
     title: 'Desarrollador FullStack<span> Atlas Gestion SA. </span>',
     desc: `
     <ul>
@@ -337,7 +337,7 @@ export const resume = [
     id: 2,
     category: 'experience',
     icon: <RiBriefcase4Fill />,
-    year: 'Marzo 2024 - Junio 2024',
+    year: 'Mayo 2024 - Agosto 2024',
     title: 'Desarrollador FullStack(Practica Profesional)<span>Atlas Gestion SA. </span>',
 
     desc: '',
