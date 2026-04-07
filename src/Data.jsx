@@ -315,16 +315,19 @@ export const resume = [
     category: 'experience',
     icon: <RiBriefcase4Fill />,
     year: 'Julio 2024 - Presente',
-    title: 'Desarrollador Front-End<span> Atlas Gestion SA. </span>',
+    title: 'Desarrollador FullStack<span> Atlas Gestion SA. </span>',
     desc: `
     <ul>
-  <li> ●- Desarrollo de componentes web reutilizables utilizando HTML5,  CSS3, JavaScript , React
-Js y bootstrap 5 en un software ERP.<li/>
-<li> ●- Implementación de diseño responsivo y adaptación a distintos dispositivos y
-navegadores.<li/>
-<li> ●- Optimización de rendimiento del front-end y mejora de la accesibilidad.<li/>
-<li> ●- Uso de herramientas de control de versiones (Git) .<li/>
-<li> ●- Participación en pruebas de interfaz, corrección de errores y mejora continua del código.<li/>
+  <li> ●- Desarrollé y mantuve módulos full-stack en software de gestión de recursos empresariales,
+   enfocado en la gestión de ventas, inventarios, y finanzas,
+    integrando front-end en React con back-end en Python/Django, 
+    lo que permitió una mejora en la coherencia en términos visuales,
+     así como en los tiempos de mantenimiento.<li/>
+<li> ●- Desarrollé interfaces responsivas y dinámicas para interactuar con los datos a través de
+ las API diseñadas en Django REST, lo cual permitió optimizar la visualización de reportes y métricas para las empresas en diferentes tipos de dispositivos, así como su accesibilidad.<li/>
+<li> ●- Me enfoqué en optimizar el rendimiento del front-end, así como las consultas al servidor, lo cual permitió mejorar la carga de datos, así como el manejo de recursos estáticos, lo que se tradujo en una interfaz más rápida, estable, y eficiente ante grandes demandas.<li/>
+<li> ●- Me enfoqué en gestionar el control de versiones y flujos colaborativos en Git, así como en coordinar el desarrollo de módulos clave en software de gestión, como usuarios, facturación, e inventarios, lo que permitió asegurar trazabilidad, calidad en términos de código, así como su consistencia en términos front-end y back-end.<li/>
+<li> ●- Colaboré en pruebas funcionales e integración, lo que permitió asegurar la integridad en términos de los datos transaccionales entre interfaz y base de datos, lo que se tradujo en reducir errores, así como en mejorar estabilidad en términos generales del software.<li/>
 <ul>
 `
 ,
@@ -335,7 +338,7 @@ navegadores.<li/>
     category: 'experience',
     icon: <RiBriefcase4Fill />,
     year: 'Marzo 2024 - Junio 2024',
-    title: 'Desarrollador Front-End(Practica Profesional)<span>Atlas Gestion SA. </span>',
+    title: 'Desarrollador FullStack(Practica Profesional)<span>Atlas Gestion SA. </span>',
 
     desc: '',
   },
