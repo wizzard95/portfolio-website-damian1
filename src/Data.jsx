@@ -28,6 +28,7 @@ import SkillsImg28 from "./assets/sqlite-logo.svg";
 import SkillsImg29 from "./assets/mongodb-logo.svg";
 import SkillsImg30 from "./assets/typescrip-tlogo.svg";
 import SkillsImg31 from "./assets/pgsql-logo.svg";
+import SkillsImg32 from "./assets/vue-logo.svg";
 
 import projectImg1 from "./assets/clima1.png";
 import projectImg2 from "./assets/chat2.jpg";
@@ -160,6 +161,20 @@ export const skill = [
     level: "",
     category: "developer",
   },
+  {
+    id: 20,
+    img: SkillsImg20,
+    title: "Bootstrap",
+    level: "",
+    category: "developer",
+  },
+  {
+    id: 5,
+    img: skillsImg5,
+    title: "Tailwind",
+    level: "",
+    category: "developer",
+  },
 
   {
     id: 3,
@@ -168,7 +183,12 @@ export const skill = [
     level: ``,
     category: "developer",
   },
-
+  {
+    id: 6,
+    img: SkillsImg30,
+    title: "TypeScript",
+    category: "developer",
+  },
   {
     id: 4,
     img: skillsImg4,
@@ -176,18 +196,11 @@ export const skill = [
     level: "",
     category: "developer",
   },
-
   {
-    id: 5,
-    img: skillsImg5,
-    title: "Tailwind",
+    id: 8,
+    img: SkillsImg32,
+    title: "Vue",
     level: "",
-    category: "developer",
-  },
-  {
-    id: 6,
-    img: SkillsImg30,
-    title: "TypeScript",
     category: "developer",
   },
 
@@ -253,14 +266,6 @@ export const skill = [
     title: "NPM",
     level: "",
     category: "BackendDev",
-  },
-
-  {
-    id: 20,
-    img: SkillsImg20,
-    title: "Bootstrap",
-    level: "",
-    category: "developer",
   },
 
   {
@@ -367,10 +372,10 @@ capas del sistema. Mi aporte ayudó a reducir errores operativos y mejorar la es
     category: "education",
     icon: <RiGraduationCapFill />,
     year: "2024",
-    title: "Tecnico Analista Programdor<span> INACAP </span>",
+    title: "Ingeniero en Informática<span> INACAP </span>",
     desc: `<ul>
-    <li> ●- Resolución de Problemas, innovación y emprendimiento, enfocada en identificar y abordar problemas, oportunidades, para desarrollar soluciones tecnológicas innovadoras y emprendedoras.<li/><br/>
-    <li> ●- Aprendizaje Continuo, enfocado en la actualización continua de los profesionales para responder a la evolución constante de la Industria y de las tecnologías.<li/><br/>
+    <li> ●- Abstraer, modelar y formalizar matemáticamente problemas susceptibles de ser resueltos computacionalmente con el fin de dar soporte al diseño de soluciones utilizando herramientas teóricas, lenguajes y representaciones formales.<li/><br/>
+    <li> ●- Concebir, desarrollar y mantener soluciones de software que den solución a problemas prácticos de forma sistemática y cuantificable, preocupándose por la calidad y la efectividad de las soluciones, siendo al mismo tiempo capaces de gestionar estos proyectos.<li/><br/>
     <li> ●- Trabajo Colaborativo y Comunicación, enfocada en la colaboración y comunicación efectiva con el equipo interno y los clientes, en diferentes contextos para la gestión de soluciones tecnológicas pertinentes.<li/>
 <ul/>
 `,
