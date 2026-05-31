@@ -9,6 +9,8 @@ import "./contact.css";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
+emailjs.init("Z1fv3rRMifysEn2wh");
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -33,7 +35,7 @@ const Contact = () => {
       !formData.message
     ) {
       setMessageColor("color-red");
-      setfeedBackMessage("los campos de texto no pueden quedar vacios!!!!");
+      setfeedBackMessage("Los campos no pueden quedar vacios");
 
       setTimeout(() => {
         setfeedBackMessage("");
@@ -42,16 +44,11 @@ const Contact = () => {
       return;
     }
     emailjs
-      .send(
-        "service_bu3wuqf",
-        "template_gqbygli",
-        formData,
-        "Z1fv3rRMifysEn2wh",
-      )
+      .send("service_bu3wuqf", "template_gqbygli", formData)
       .then(
         () => {
-          setMessageColor("colo-first");
-          setfeedBackMessage("Mensaje Enviado  ✅📤");
+          setMessageColor("color-first");
+          setfeedBackMessage("Mensaje Enviado ✅");
 
           setTimeout(() => {
             setfeedBackMessage("");
@@ -60,7 +57,15 @@ const Contact = () => {
           setFormData({ name: "", email: "", subject: "", message: "" });
         },
         (error) => {
-          alert("DIABLOS!!!, AL PARECER ALGO SALIO MAL..", error);
+          console.error("EmailJS error:", error);
+          const msg =
+            error?.text ||
+            (error?.status === 412
+              ? "Error de configuración: revisa service/template ID o límite de cuenta"
+              : "Error al enviar, intenta de nuevo");
+          setMessageColor("color-red");
+          setfeedBackMessage(msg);
+          setTimeout(() => setfeedBackMessage(""), 6000);
         },
       );
   };
