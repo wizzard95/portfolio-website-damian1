@@ -30,13 +30,7 @@ import SkillsImg30 from "./assets/typescrip-tlogo.svg";
 import SkillsImg31 from "./assets/pgsql-logo.svg";
 import SkillsImg32 from "./assets/vue-logo.svg";
 
-import projectImg1 from "./assets/clima1.png";
-import projectImg2 from "./assets/chat2.jpg";
-import projectImg3 from "./assets/agenda.svg";
-/* import projectImg4 from './assets/hospital.png'; */
-/* import projectImg5 from './assets/project-5.jpg'; */
-import projectImg6 from "./assets/notes.svg";
-import projectImg7 from "./assets/appnotas.png";
+import projectImg1 from "./assets/meEcommerce.png";
 
 import Theme1 from "./assets/red.png";
 import Theme2 from "./assets/blueviolet.png";
@@ -401,74 +395,25 @@ capas del sistema. Mi aporte ayudó a reducir errores operativos y mejorar la es
 ];
 
 export const portfolio = [
-  /*    {
-    id: 5,
-    img: projectImg4,
-    title: 'Sistema de Gestión Hospitalario',
-   
-    description:
-      'En desarrollo................',
-    skills: [SkillsImg11, SkillsImg22, skillsImg4, SkillsImg17, SkillsImg21 ],
-    link: '',
-  }, */ {
+  {
     id: 1,
-    img: projectImg7,
-    title: "NOTAS",
-    description: `Aplicación MERN para gestionar tareas con autenticación de usuarios.
-Permite listar, crear, editar y eliminar tareas personales.
-Tras iniciar sesión, carga tus tareas y las muestra en una cuadrícula.
-Maneja estados de carga y errores al comunicarse con el servidor.`,
-    skills: [SkillsImg11, SkillsImg22, skillsImg4, skillsImg5, SkillsImg29],
-    link: "https://mern-auth-crud-pi.vercel.app/",
-  },
-  /*     {
-    id: 3,
-    img: projectImg2,
-    title: 'Chat en tiempo real',
-  
-    description:
-      `Proyecto realizado con Nodejs, socket.io, express, React y MongoDB.
-       Puedes crear o entrar a salas de chat, enviar y recibir mensajes,
-       además puedes mover los componentes de lugar a traves de Drag and Drop.
-       Backend-End desplegado con Render y Front-End con Vercel. `,
-    skills: [SkillsImg11, SkillsImg12, SkillsImg22, skillsImg4, SkillsImg29 ],
-    link: 'https://realtime-chat-app-omega-tan.vercel.app/',
-  }, */
-
-  {
-    id: 2,
     img: projectImg1,
-    title: "ClimApp",
-    /* title: 'Coffee Website', */
-    description: `Se muestran el estado del clima e información meteorologica 
-      de alguna ciudad del mundo 
-      a traves del consumo de la API de OpenWeatherMap. se adapta
-       a cualquier dispositivo ya sea pc, tablet y móvil.`,
-    skills: [SkillsImg1, SkillsImg2, SkillsImg3, skillsImg5],
-    link: "https://wizzard95.github.io/API-CLIMA-OWM/",
+    title: "meEcommerce",
+    description: `Este proyecto es un backend de tipo API REST desarrollado con Node.js y Express,
+     diseñado para soportar una tienda en línea básica con funcionalidades de autenticación de usuarios,
+      catálogo de productos, carrito de compras, creación de órdenes y pagos con Mercado Pago.
+       Su propósito principal es actuar como el motor central de lógica de negocio y persistencia
+        de datos entre el frontend y la base de datos MongoDB.`,
+    skills: [
+      SkillsImg11,
+      SkillsImg22,
+      skillsImg4,
+      skillsImg5,
+      SkillsImg29,
+      SkillsImg16,
+    ],
+    link: "https://frontend-ecomerce-ckdf.vercel.app/",
   },
-
-  {
-    id: 4,
-    img: projectImg3,
-    title: "Agenda de contactos",
-    /* title: 'Restaurant Landing Page', */
-    description: `Aplicación de escritorio para registro y gestión de contactos
-      hecha con Python junto al Framework Flet y SQLite. Despliegue a traves de Render`,
-    skills: [SkillsImg14, SkillsImg27, SkillsImg28],
-    link: "https://crudpythonflet-1.onrender.com/",
-  },
-
-  /*   {
-    id: 5,
-    img: projectImg5,
-    title: 'Proyecto 5', */
-  /* title: 'Construction Landing Page', */
-  /*   description:
-      'Short description of the project that was carried out in this portfolio.',
-    skills: [SkillsImg1, SkillsImg2, SkillsImg3],
-    link: '',
-  }, */
 ];
 
 export const themes = [
