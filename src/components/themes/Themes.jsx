@@ -4,7 +4,7 @@ import './themes.css';
 
 import { FaCog } from "react-icons/fa";
 import { BsMoon, BsSun } from "react-icons/bs";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const getStorageColor = () => {
   let color = '4';
@@ -22,16 +22,16 @@ const getStorageTheme = () => {
   return theme;
 }
 
-
-
 const Themes = () => {
 
   const [showSwitcher, setShowSwitcher] = useState(false);
   const [color, setColor] = useState(getStorageColor());
   const [theme, setTheme] = useState(getStorageTheme());
+  const switcherRef = useRef(null);
 
   const changeColor = (color) => {
-    setColor(color)
+    setColor(color);
+    setShowSwitcher(false);
   }
 
   const toggleTheme = () => {
@@ -41,7 +41,6 @@ const Themes = () => {
       setTheme('light-theme')
     }
   }
-
 
   useEffect(() => {
     document.documentElement.style.setProperty('--hue', color);
@@ -53,33 +52,44 @@ const Themes = () => {
     localStorage.setItem('theme', theme);
   }, [theme]);
 
-  
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (switcherRef.current && !switcherRef.current.contains(e.target)) {
+        setShowSwitcher(false);
+      }
+    };
+    if (showSwitcher) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [showSwitcher]);
 
   return (
-    <div className={`${showSwitcher ? 'show-switcher' : ''} style-switcher`}>
-
-      <div className="switcher-toggler" onClick={() => setShowSwitcher(!showSwitcher)}>
-
-          <FaCog />
+    <>
+      <div
+        ref={switcherRef}
+        className={`${showSwitcher ? 'show-switcher' : ''} style-switcher`}
+      >
+        <h3 className="switcher-title">Style Switcher</h3>
+        <div className="switcher-items grid">
+          {themes.map((theme, index) => {
+          return  <ThemeItem key={index} {...theme} changeColor={changeColor}/>;
+        })}
+        </div>
       </div>
+
+      {!showSwitcher && (
+        <div className="switcher-toggler" onClick={() => setShowSwitcher(true)}>
+          <FaCog />
+        </div>
+      )}
 
       <div className="theme-toggler" onClick={toggleTheme}>
-          {theme === 'light-theme' ? <BsMoon /> :<BsSun />}
+        {theme === 'light-theme' ? <BsMoon /> : <BsSun />}
       </div>
-
-      <h3 className="switcher-title">Style Switcher</h3>
-      <div className="switcher-items grid">
-        {themes.map((theme, index) => {
-        return  <ThemeItem key={index} {...theme} changeColor={changeColor}/>;
-      })}
-      </div>
-
-      <div 
-        className="switcher-close"
-        onClick={() => setShowSwitcher(!showSwitcher)}
-        > &times;
-        </div>
-    </div>
+    </>
   );
 };
 

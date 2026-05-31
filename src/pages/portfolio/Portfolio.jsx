@@ -15,20 +15,21 @@ const Portfolio = () => {
                   <a href={link} className="portfolio-img-wrapper" target="_blank">
                     <img src={img} alt="" className="portfolio-img" />
                   </a>
-                  <h3 className="portfolio-title">{title}</h3>
-                  <p className="portfolio-description">{description}</p>
-
-                  <div className="portfolio-skills">
-                    {skills.map((skill, index) => {
-                      return (
-                        <img src={skill} alt="" className="portfolio-skill" key={index}/>
-                      )
-                    })}
+                  <div className="portfolio-body">
+                    <div className="portfolio-skills">
+                      {skills.map((skill, index) => {
+                        return (
+                          <img src={skill} alt="" className="portfolio-skill" key={index}/>
+                        )
+                      })}
+                    </div>
+                    <h3 className="portfolio-title">{title}</h3>
+                    <p className="portfolio-description">{description}</p>
+                    <a href={link} className="portfolio-link" target="_blank">
+                      <RiLink  className="link-icon"/>
+                      Visitar Proyecto
+                    </a>
                   </div>
-                  <a href={link} className="portfolio-link" target="_blank">
-                    <RiLink  className="link-icon"/>
-                    Visitar Proyecto
-                  </a>
               </article>
             )
           })}
