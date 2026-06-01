@@ -29,8 +29,11 @@ import SkillsImg29 from "./assets/mongodb-logo.svg";
 import SkillsImg30 from "./assets/typescrip-tlogo.svg";
 import SkillsImg31 from "./assets/pgsql-logo.svg";
 import SkillsImg32 from "./assets/vue-logo.svg";
+import SkillsImg33 from "./assets/microsoft-sql-server.svg";
+import SkillsImg34 from "./assets/jest-logo.svg";
 
 import projectImg1 from "./assets/meEcommerce.png";
+import projectImg2 from "./assets/frontvue.png";
 
 import Theme1 from "./assets/red.png";
 import Theme2 from "./assets/blueviolet.png";
@@ -199,25 +202,30 @@ export const skill = [
   },
 
   {
+    id: 14,
+    img: SkillsImg14,
+    title: "Python",
+    level: "",
+    category: "BackendDev",
+  },
+  {
     id: 11,
     img: SkillsImg11,
     title: "NodeJS",
     level: "",
     category: "BackendDev",
   },
-
   {
-    id: 12,
-    img: SkillsImg12,
-    title: "Socket.io",
+    id: 18,
+    img: SkillsImg22,
+    title: "Express",
     level: "",
     category: "BackendDev",
   },
-
   {
-    id: 14,
-    img: SkillsImg14,
-    title: "Python",
+    id: 19,
+    img: SkillsImg33,
+    title: "SQL Server",
     level: "",
     category: "BackendDev",
   },
@@ -242,22 +250,6 @@ export const skill = [
     id: 17,
     img: SkillsImg17,
     title: "MySQL",
-    level: "",
-    category: "BackendDev",
-  },
-
-  {
-    id: 18,
-    img: SkillsImg22,
-    title: "Express",
-    level: "",
-    category: "BackendDev",
-  },
-
-  {
-    id: 19,
-    img: SkillsImg19,
-    title: "NPM",
     level: "",
     category: "BackendDev",
   },
@@ -309,6 +301,13 @@ export const skill = [
     id: 28,
     img: SkillsImg31,
     title: "PostgreSQL",
+    level: "",
+    category: "BackendDev",
+  },
+  {
+    id: 29,
+    img: SkillsImg34,
+    title: "Jest",
     level: "",
     category: "BackendDev",
   },
@@ -404,15 +403,29 @@ export const portfolio = [
       catálogo de productos, carrito de compras, creación de órdenes y pagos con Mercado Pago.
        Su propósito principal es actuar como el motor central de lógica de negocio y persistencia
         de datos entre el frontend y la base de datos MongoDB.`,
+    skills: [SkillsImg11, SkillsImg22, skillsImg5, SkillsImg29, SkillsImg16],
+    link: "https://frontend-ecomerce-ckdf.vercel.app/",
+  },
+  {
+    id: 1,
+    img: projectImg2,
+    title: "Tienda Online VueJs",
+    description: `SPA desarrollado con Vue 3, TypeScript y Tailwind CSS.
+     Permite a los usuarios navegar productos, gestionar un carrito de
+      compras, realizar pagos a través de Mercado Pago y consultar 
+      su historial de órdenes. Incluye un panel de administración 
+      para gestionar el catálogo (CRUD) y un sistema de autenticación
+       por cookies con sesiones persistentes.`,
     skills: [
       SkillsImg11,
       SkillsImg22,
-      skillsImg4,
+      SkillsImg30,
       skillsImg5,
       SkillsImg29,
       SkillsImg16,
+      SkillsImg32,
     ],
-    link: "https://frontend-ecomerce-ckdf.vercel.app/",
+    link: "https://front-vue-orcin.vercel.app/",
   },
 ];
 

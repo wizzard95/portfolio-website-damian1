@@ -1,5 +1,6 @@
 .portfolio-container {
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
 }
 
@@ -11,11 +12,12 @@
     transition: all 0.4s ease;
     border: 1px solid var(--border-color);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: stretch;
 }
 
 .portfolio-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-4px);
     box-shadow: var(--shadow-hover);
     border-color: var(--first-color);
 }
@@ -23,7 +25,8 @@
 .portfolio-img-wrapper {
     overflow: hidden;
     display: block;
-    aspect-ratio: 16/10;
+    min-width: 320px;
+    max-width: 320px;
     background-color: var(--body-color);
 }
 
@@ -39,17 +42,18 @@
 }
 
 .portfolio-body {
-    padding: 1.5rem;
+    padding: 1.5rem 2rem;
     flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .portfolio-skills {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     flex-wrap: wrap;
 }
 
@@ -60,9 +64,9 @@
 }
 
 .portfolio-title {
-    font-size: var(--large-font-size);
+    font-size: var(--h3-font-size);
     font-weight: var(--weight-700);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     color: var(--title-color);
 }
 
@@ -70,8 +74,7 @@
     font-size: var(--small-font-size);
     line-height: 1.7;
     color: var(--text-color);
-    margin-bottom: 1.5rem;
-    flex: 1;
+    margin-bottom: 1.25rem;
 }
 
 .portfolio-link {
@@ -82,7 +85,6 @@
     font-size: var(--small-font-size);
     font-weight: var(--weight-600);
     transition: all 0.3s ease;
-    margin-top: auto;
 }
 
 .portfolio-link:hover {
@@ -97,4 +99,20 @@
 
 .portfolio-link:hover .link-icon {
     transform: translateX(4px);
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-card {
+        flex-direction: column;
+    }
+
+    .portfolio-img-wrapper {
+        min-width: 100%;
+        max-width: 100%;
+        aspect-ratio: 16/10;
+    }
+
+    .portfolio-body {
+        padding: 1.25rem;
+    }
 }
