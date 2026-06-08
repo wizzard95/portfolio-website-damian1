@@ -34,6 +34,7 @@ import SkillsImg34 from "./assets/jest-logo.svg";
 
 import projectImg1 from "./assets/meEcommerce.png";
 import projectImg2 from "./assets/frontvue.png";
+import projectImg3 from "./assets/fullFeo.png";
 
 import Theme1 from "./assets/red.png";
 import Theme2 from "./assets/blueviolet.png";
@@ -403,7 +404,14 @@ export const portfolio = [
       catálogo de productos, carrito de compras, creación de órdenes y pagos con Mercado Pago.
        Su propósito principal es actuar como el motor central de lógica de negocio y persistencia
         de datos entre el frontend y la base de datos MongoDB.`,
-    skills: [SkillsImg11, SkillsImg22, skillsImg5, SkillsImg29, SkillsImg16],
+    skills: [
+      SkillsImg11,
+      SkillsImg22,
+      skillsImg4,
+      skillsImg5,
+      SkillsImg29,
+      SkillsImg16,
+    ],
     link: "https://frontend-ecomerce-ckdf.vercel.app/",
   },
   {
@@ -426,6 +434,20 @@ export const portfolio = [
       SkillsImg16,
     ],
     link: "https://front-vue-orcin.vercel.app/",
+  },
+  {
+    id: 1,
+    img: projectImg3,
+    title: "FullGeo Topografía",
+    description: `Landing page corporativa para FullGeo Topografía,
+     empresa chilena de topografía con cobertura en Ñuble, Biobío y 
+     La Araucanía. Desarrollada con React 19 + TypeScript + TanStack Start (SSR/SSG) y
+      desplegada en Vercel, es una single-page marketing site con modo oscuro/claro,
+       animaciones scroll-driven, 6 secciones (Hero, Servicios
+       , Proceso, Cobertura, Contacto)y un stack preparado para escalar a suite de gestión:
+        Radix UI, Tailwind CSS v4, TanStack Router, React Query, Zustand.`,
+    skills: [SkillsImg30, skillsImg4, skillsImg5],
+    link: "https://geo-control-suite.vercel.app/",
   },
 ];
 
