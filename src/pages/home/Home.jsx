@@ -1,4 +1,4 @@
-import Cv from "../../pdf/cvDamianAcuña-Dev.pdf";
+import Cv from "../../pdf/cvDamianAcuña--Dev.pdf";
 import Profile from "../../assets/yo.jpeg";
 import { RiDownload2Line, RiMailLine } from "react-icons/ri";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -14,7 +14,7 @@ const home = () => {
           <span>Damián Acuña</span>
         </h1>
         <p className="home-subtitle">
-          <span className="home-subtitle-code">{'</>'}</span>
+          <span className="home-subtitle-code">{"</>"}</span>
           FullStack Developer
         </p>
         <p className="home-description">
@@ -33,7 +33,12 @@ const home = () => {
           </a>
 
           <div className="home-socials">
-            <a href="https://github.com/wizzard95" target="_blank" className="social-link" aria-label="GitHub">
+            <a
+              href="https://github.com/wizzard95"
+              target="_blank"
+              className="social-link"
+              aria-label="GitHub"
+            >
               <FaGithub />
             </a>
             <a
