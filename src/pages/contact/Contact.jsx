@@ -71,14 +71,13 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact section">
-      <h2 className="section-title">
-        Contactame <span>Aqui</span>
+    <section id="contact" className="contact section">
+      <h2 className="section-title reveal">
+          Contactame <span>Aqui</span>
       </h2>
 
       <div className="contact-container container grid">
-        {/* IZQUIERDA: Tarjetas de contacto */}
-        <div className="contact-content">
+        <div className="contact-content reveal-left">
           <div className="contact-card">
             <span className="contact-icon">
               <RiMap2Line />
@@ -112,21 +111,10 @@ const Contact = () => {
               <p className="contact-data">pcdamian1@outlook.com</p>
             </div>
           </div>
-          <br />
-
-          {/*   <div className="contact-card">
-            <span className="contact-icon">
-              <RiBook2Line />
-            </span>
-            <div>
-              <h3 className="contact-title">Telefono</h3>
-              <p className="contact-data">+569 98760317</p>
-            </div>
-          </div> */}
         </div>
 
         {/* DERECHA: Formulario */}
-        <form action="" className="contact-form grid" onSubmit={sendEmail}>
+        <form action="" className="contact-form grid reveal-right" onSubmit={sendEmail}>
           <div className="contact-form-group grid">
             <div className="contact-form-div">
               <label htmlFor="" className="contact-form-label">

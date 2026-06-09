@@ -1,4 +1,4 @@
-import parse from 'html-react-parser'
+/* import parse from 'html-react-parser'
 
 const ResumeItem = ({icon, year, title, desc}) => {
   return (
@@ -12,4 +12,4 @@ const ResumeItem = ({icon, year, title, desc}) => {
   )
 }
 
-export default ResumeItem
+export default ResumeItem */

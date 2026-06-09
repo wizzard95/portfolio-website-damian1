@@ -6,10 +6,10 @@ import "./home.css";
 
 const home = () => {
   return (
-    <section className="home-container grid">
-      <img src={Profile} alt="" className="home-img" />
+    <section id="home" className="home-container grid">
+      <img src={Profile} alt="" className="home-img reveal-left" />
 
-      <div className="home-content">
+      <div className="home-content reveal-right">
         <h1 className="home-title">
           <span>Damián Acuña</span>
         </h1>
@@ -18,10 +18,19 @@ const home = () => {
           FullStack Developer
         </p>
         <p className="home-description">
-          Me especializo en desarrollar aplicaciones web escalables y
-          eficientes, combinando interfaces modernas, backends robustos y buenas
-          prácticas para optimizar procesos y mejorar la experiencia del
-          usuario.
+          Soy desarrollador Full Stack con experiencia en el desarrollo de
+          aplicaciones web y APIs REST utilizando tecnologías como Node.js,
+          Express, React, Vue.js, TypeScript y Django. He participado en
+          proyectos de comercio electrónico, sistemas ERP y aplicaciones
+          corporativas, implementando soluciones escalables, seguras y
+          orientadas a las necesidades del negocio. <br />
+          <br />
+          Soy Ingeniero en Informática titulado por INACAP y me mantengo en
+          constante aprendizaje a través de proyectos propios y nuevas
+          tecnologías. Cuento con experiencia en bases de datos SQL y NoSQL,
+          Docker, Git y despliegue de aplicaciones, destacando por mi capacidad
+          de adaptación, resolución de problemas y enfoque en la calidad del
+          software.
         </p>
 
         <div className="home-actions">
@@ -49,7 +58,7 @@ const home = () => {
             >
               <FaLinkedin />
             </a>
-            <a href="/contact" className="social-link" aria-label="Contacto">
+            <a href="#contact" className="social-link" aria-label="Contacto">
               <RiMailLine />
             </a>
           </div>

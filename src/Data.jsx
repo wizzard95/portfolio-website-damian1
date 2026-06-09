@@ -48,25 +48,25 @@ export const links = [
   {
     name: "Home",
     icon: <FaHome className="nav-icon" />,
-    path: "/",
+    path: "#home",
   },
 
   {
     name: "Sobre Mi",
     icon: <FaUser className="nav-icon" />,
-    path: "/about",
+    path: "#about",
   },
 
   {
     name: "Proyectos",
     icon: <FaFolderOpen className="nav-icon" />,
-    path: "/portfolio",
+    path: "#portfolio",
   },
 
   {
     name: "Contacto",
     icon: <FaEnvelopeOpen className="nav-icon" />,
-    path: "/contact",
+    path: "#contact",
   },
 ];
 export const personalInfo = [
@@ -312,86 +312,6 @@ export const skill = [
     level: "",
     category: "BackendDev",
   },
-];
-
-export const resume = [
-  {
-    id: 1,
-    category: "experience",
-    icon: <RiBriefcase4Fill />,
-    year: "Agosto 2024 - Noviembre 2025",
-    title: "Desarrollador FullStack<span> Atlas Gestion SA. </span>",
-    desc: `
-    <ul>
-  <li> ●- Desarrollé módulos de ventas, inventario y facturación con React y Django para centralizar 
-procesos operativos. Implementé interfaces dinámicas y APIs REST, mejorando la gestión de datos y reduciendo tiempos en tareas
-administrativas.<li/>
-<li> ●-Optimicé el rendimiento del frontend y backend porque existían tiempos de carga elevados. Reduje consultas
-innecesarias y mejoré la comunicación servidor-cliente, logrando mayor estabilidad y velocidad en la aplicación.<li/>
-<li> ●- Implementé una arquitectura modular en Django para facilitar el mantenimiento y escalabilidad del sistema. Separé
-lógica, rutas y modelos, permitiendo desarrollar nuevas funcionalidades de forma más rápida y ordenada.<li/>
-<li> ●- Gestioné flujos colaborativos con Git para mantener control y trazabilidad del código entre múltiples desarrolladores.
-Organicé ramas y resolví conflictos, asegurando integraciones estables y despliegues más seguros..<li/>
-<li> ●- Realicé pruebas funcionales e integración para validar la consistencia de datos entre frontend, backend y base de
-datos. Esto permitió detectar errores tempranamente y mejorar la confiabilidad del ERP.<li/>
-<li> ●-Coordiné el desarrollo de módulos críticos como usuarios, inventario y facturación para asegurar coherencia entre las
-capas del sistema. Mi aporte ayudó a reducir errores operativos y mejorar la estabilidad del producto.
- <li/>
-<ul>
-`,
-  },
-
-  {
-    id: 2,
-    category: "experience",
-    icon: <RiBriefcase4Fill />,
-    year: "Mayo 2024 - Agosto 2024",
-    title:
-      "Desarrollador FullStack(Practica Profesional)<span>Atlas Gestion SA. </span>",
-
-    desc: "",
-  },
-  /*
-  {
-    id: 3,
-    category: 'experience',
-    icon: <RiBriefcase4Fill />,
-    year: '2005 - 2013',
-    title: 'Consultant <span> Videohive </span>',
-    desc: 'Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur elit, sed do eiusmod tempor duntt.',
-  }, */
-
-  {
-    id: 4,
-    category: "education",
-    icon: <RiGraduationCapFill />,
-    year: "2024",
-    title: "Ingeniero en Informática<span> INACAP </span>",
-    desc: `<ul>
-    <li> ●- Abstraer, modelar y formalizar matemáticamente problemas susceptibles de ser resueltos computacionalmente con el fin de dar soporte al diseño de soluciones utilizando herramientas teóricas, lenguajes y representaciones formales.<li/><br/>
-    <li> ●- Concebir, desarrollar y mantener soluciones de software que den solución a problemas prácticos de forma sistemática y cuantificable, preocupándose por la calidad y la efectividad de las soluciones, siendo al mismo tiempo capaces de gestionar estos proyectos.<li/><br/>
-    <li> ●- Trabajo Colaborativo y Comunicación, enfocada en la colaboración y comunicación efectiva con el equipo interno y los clientes, en diferentes contextos para la gestión de soluciones tecnológicas pertinentes.<li/>
-<ul/>
-`,
-  },
-
-  /*   {
-    id: 5,
-    category: 'education',
-    icon: <RiGraduationCapFill />,
-    year: '2012',
-    title: 'Master Degree <span> KIEV University </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt.',
-  },
-
-  {
-    id: 6,
-    category: 'education',
-    icon: <RiGraduationCapFill />,
-    year: '2009',
-    title: 'Bachelor Degree <span> Tunis High School </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore.',
-  }, */
 ];
 
 export const portfolio = [

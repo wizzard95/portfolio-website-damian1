@@ -4,14 +4,14 @@ import './portfolio.css';
 
 const Portfolio = () => {
   return (
-    <section className="portfolio section">
-      <h2 className="section-title">
+    <section id="portfolio" className="portfolio section">
+      <h2 className="section-title reveal">
           Mis <span>Proyectos</span>
       </h2>
-      <div className="portfolio-container container grid">
-          {portfolio.map(({id, img, title, description, skills, link}) => {
+      <div className="portfolio-container container">
+          {portfolio.map(({id, img, title, description, skills, link}, index) => {
             return (
-              <article className="portfolio-card" key={id}>
+              <article className="portfolio-card reveal" key={id} style={{transitionDelay: `${index * 0.1}s`}}>
                   <a href={link} className="portfolio-img-wrapper" target="_blank">
                     <img src={img} alt="" className="portfolio-img" />
                   </a>
