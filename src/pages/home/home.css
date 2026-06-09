@@ -7,20 +7,40 @@
     position: relative;
 }
 
-.home-img {
-    width: 380px;
-    height: 380px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: var(--shadow-hover);
-    border: 3px solid var(--border-color);
-    transition: all 0.4s ease;
+.home-img-wrapper {
+    position: relative;
     justify-self: center;
+}
+
+.home-img-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    border-radius: 28px;
+    background: linear-gradient(135deg, var(--first-color), var(--first-color-alpha), var(--first-color));
+    opacity: 0.5;
+    transition: opacity 0.4s ease;
+}
+
+.home-img-wrapper:hover::before {
+    opacity: 0.8;
+}
+
+.home-img {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: var(--shadow-hover);
+    border: 3px solid var(--container-color);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
 }
 
 .home-img:hover {
     border-color: var(--first-color);
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 .home-content {

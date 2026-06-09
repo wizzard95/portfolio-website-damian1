@@ -319,6 +319,7 @@ export const portfolio = [
     id: 1,
     img: projectImg1,
     title: "meEcommerce",
+    date: "Mayo 2026 – Presente(producción)",
     description: `Este proyecto es un backend de tipo API REST desarrollado con Node.js y Express,
      diseñado para soportar una tienda en línea básica con funcionalidades de autenticación de usuarios,
       catálogo de productos, carrito de compras, creación de órdenes y pagos con Mercado Pago.
@@ -331,13 +332,15 @@ export const portfolio = [
       skillsImg5,
       SkillsImg29,
       SkillsImg16,
+      SkillsImg34,
     ],
     link: "https://frontend-ecomerce-ckdf.vercel.app/",
   },
   {
-    id: 1,
+    id: 2,
     img: projectImg2,
     title: "Tienda Online VueJs",
+    date: "Abril 2026 – Presente(producción)",
     description: `SPA desarrollado con Vue 3, TypeScript y Tailwind CSS.
      Permite a los usuarios navegar productos, gestionar un carrito de
       compras, realizar pagos a través de Mercado Pago y consultar 
@@ -352,13 +355,15 @@ export const portfolio = [
       skillsImg5,
       SkillsImg29,
       SkillsImg16,
+      SkillsImg34,
     ],
     link: "https://front-vue-orcin.vercel.app/",
   },
   {
-    id: 1,
+    id: 3,
     img: projectImg3,
     title: "FullGeo Topografía",
+    date: "Marzo 2026",
     description: `Landing page corporativa para FullGeo Topografía,
      empresa chilena de topografía con cobertura en Ñuble, Biobío y 
      La Araucanía. Desarrollada con React 19 + TypeScript + TanStack Start (SSR/SSG) y

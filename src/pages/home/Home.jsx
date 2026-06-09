@@ -7,7 +7,9 @@ import "./home.css";
 const home = () => {
   return (
     <section id="home" className="home-container grid">
-      <img src={Profile} alt="" className="home-img reveal-left" />
+      <div className="home-img-wrapper reveal-left">
+        <img src={Profile} alt="" className="home-img" />
+      </div>
 
       <div className="home-content reveal-right">
         <h1 className="home-title">
@@ -18,10 +20,10 @@ const home = () => {
           FullStack Developer
         </p>
         <p className="home-description">
-          Soy desarrollador Full Stack con experiencia en el desarrollo de
-          aplicaciones web y APIs REST utilizando tecnologías como Node.js,
-          Express, React, Vue.js, TypeScript y Django. He participado en
-          proyectos de comercio electrónico, sistemas ERP y aplicaciones
+          Soy desarrollador Full Stack con experiencia y enfoque en el
+          desarrollo de aplicaciones web y APIs REST utilizando tecnologías como
+          Node.js, Express, React, Vue.js, TypeScript y Django. He participado
+          en proyectos de comercio electrónico, sistemas ERP y aplicaciones
           corporativas, implementando soluciones escalables, seguras y
           orientadas a las necesidades del negocio. <br />
           <br />

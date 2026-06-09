@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section id="about" className="section container">
       <h2 className="section-title reveal">
-        Mis <span>Skills</span>
+        Tecnologías <span>y</span> Herramientas
       </h2>
 
       <div className="separator"></div>
