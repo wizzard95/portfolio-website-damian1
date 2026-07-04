@@ -1,7 +1,7 @@
 import { links } from "../../Data";
 import { RiCloseLine, RiMenuLine } from "react-icons/ri";
-import "./navbar.css";
 import { useState, useEffect } from "react";
+import "./navbar.css";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -19,12 +19,29 @@ const Navbar = () => {
       },
       { rootMargin: "-50% 0px -50% 0px" },
     );
-    sections.forEach((s) => observer.observe(s));
-    return () => sections.forEach((s) => observer.unobserve(s));
+
+    sections.forEach((section) => observer.observe(section));
+    return () => sections.forEach((section) => observer.unobserve(section));
   }, []);
 
-  const handleClick = (e, path) => {
-    e.preventDefault();
+  useEffect(() => {
+    document.body.classList.toggle("nav-open", showMenu);
+    return () => document.body.classList.remove("nav-open");
+  }, [showMenu]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setShowMenu(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const handleNavigate = (event, path) => {
+    event.preventDefault();
     const id = path.replace("#", "");
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     setShowMenu(false);
@@ -36,7 +53,16 @@ const Navbar = () => {
         <span>D</span>A<span>.</span>
       </div>
 
-      <div className={`${showMenu ? "nav-menu show-menu" : "nav-menu"}`}>
+      <div className={`nav-menu${showMenu ? " show-menu" : ""}`}>
+        <button
+          type="button"
+          className="nav-close"
+          onClick={() => setShowMenu(false)}
+          aria-label="Cerrar menú"
+        >
+          <RiCloseLine />
+        </button>
+
         <ul className="nav-list">
           {links.map(({ name, icon, path }, index) => {
             const sectionId = path.replace("#", "");
@@ -47,7 +73,7 @@ const Navbar = () => {
                   className={`nav-link ${
                     activeSection === sectionId ? "active-nav" : ""
                   }`}
-                  onClick={(e) => handleClick(e, path)}
+                  onClick={(event) => handleNavigate(event, path)}
                 >
                   {icon}
                   <span className="nav-name">{name}</span>
@@ -56,14 +82,17 @@ const Navbar = () => {
             );
           })}
         </ul>
-        <div className="nav-close" onClick={() => setShowMenu(false)}>
-          <RiCloseLine />
-        </div>
       </div>
 
-      <div className="nav-toggle" onClick={() => setShowMenu(!showMenu)}>
+      <button
+        type="button"
+        className="nav-toggle"
+        onClick={() => setShowMenu((prev) => !prev)}
+        aria-label="Abrir menú"
+        aria-expanded={showMenu}
+      >
         <RiMenuLine />
-      </div>
+      </button>
     </nav>
   );
 };

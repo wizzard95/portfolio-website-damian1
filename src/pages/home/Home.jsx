@@ -1,4 +1,4 @@
-import Cv from "../../pdf/cvDamianAcuña--Dev.pdf";
+import Cv from "../../pdf/cv-damian-acuña---dev.pdf";
 import Profile from "../../assets/yo.jpeg";
 import { RiDownload2Line, RiMailLine } from "react-icons/ri";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -52,6 +52,7 @@ const home = () => {
             >
               <FaGithub />
             </a>
+
             <a
               href="https://www.linkedin.com/in/dami%C3%A1n-acu%C3%B1a-646705244/"
               target="_blank"

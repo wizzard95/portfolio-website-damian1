@@ -1,129 +1,224 @@
 .home-container {
-    grid-template-columns: 4fr 6fr;
-    align-items: center;
-    gap: 4rem;
-    padding: 2.5rem;
-    min-height: 100vh;
-    position: relative;
+  grid-template-columns: 4fr 6fr;
+  align-items: center;
+  gap: 4rem;
+  padding: 2.5rem;
+  min-height: 100vh;
+  position: relative;
+  transition: padding 0.4s ease, gap 0.4s ease, transform 0.4s ease;
 }
 
 .home-img-wrapper {
-    position: relative;
-    justify-self: center;
+  position: relative;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 28px;
 }
 
 .home-img-wrapper::before {
-    content: '';
-    position: absolute;
-    inset: -6px;
-    border-radius: 28px;
-    background: linear-gradient(135deg, var(--first-color), var(--first-color-alpha), var(--first-color));
-    opacity: 0.5;
-    transition: opacity 0.4s ease;
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 28px;
+  background: linear-gradient(
+    135deg,
+    var(--first-color),
+    var(--first-color-alpha),
+    var(--first-color)
+  );
+  opacity: 0.5;
+  transition: opacity 0.4s ease;
 }
 
 .home-img-wrapper:hover::before {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .home-img {
-    position: relative;
-    width: 340px;
-    height: 340px;
-    object-fit: cover;
-    border-radius: 22px;
-    box-shadow: var(--shadow-hover);
-    border: 3px solid var(--container-color);
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    display: block;
+  position: relative;
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: var(--shadow-hover);
+  border: 3px solid var(--container-color);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.4s ease, box-shadow 0.4s ease;
+  display: block;
+  will-change: transform, border-color;
 }
 
 .home-img:hover {
-    border-color: var(--first-color);
-    transform: scale(1.03);
+  border-color: var(--first-color);
+  transform: scale(1.04);
 }
 
 .home-content {
-    max-width: 560px;
+  max-width: 560px;
 }
 
 .home-title {
-    font-size: var(--h1-font-size);
-    font-weight: var(--weight-800);
-    letter-spacing: -0.03em;
-    margin-bottom: 0.5rem;
+  font-size: var(--h1-font-size);
+  font-weight: var(--weight-800);
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5rem;
 }
 
 .home-title span {
-    color: var(--first-color);
+  color: var(--first-color);
 }
 
 .home-subtitle {
-    font-size: var(--large-font-size);
-    color: var(--text-color-light);
-    font-weight: var(--weight-500);
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+  font-size: var(--large-font-size);
+  color: var(--text-color-light);
+  font-weight: var(--weight-500);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .home-subtitle-code {
-    color: var(--first-color);
-    font-weight: var(--weight-600);
+  color: var(--first-color);
+  font-weight: var(--weight-600);
 }
 
 .home-description {
-    color: var(--text-color);
-    line-height: 1.8;
-    margin-bottom: 2.5rem;
-    font-size: var(--normal-font-size);
+  color: var(--text-color);
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  font-size: var(--normal-font-size);
 }
 
 .home-actions {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .home-socials {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .social-link {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: var(--container-color);
-    color: var(--title-color);
-    display: grid;
-    place-items: center;
-    font-size: 1.25rem;
-    transition: all 0.3s ease;
-    box-shadow: var(--shadow);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--container-color);
+  color: var(--title-color);
+  display: grid;
+  place-items: center;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
 }
 
 .social-link:hover {
-    background-color: var(--first-color);
-    color: var(--white-color);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px hsla(var(--hue), 65%, 55%, 0.3);
+  background-color: var(--first-color);
+  color: var(--white-color);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px hsla(var(--hue), 65%, 55%, 0.3);
 }
 
 .color-block {
-    display: none;
+  display: none;
 }
 
 @media screen and (max-width: 1024px) {
-    .home-actions {
-        justify-content: center;
-    }
+  .home-container {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+  }
 
-    .home-socials {
-        justify-content: center;
-    }
+  .home-img {
+    width: min(280px, 100%);
+    height: min(280px, 100%);
+  }
+
+  .home-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .home-subtitle,
+  .home-actions {
+    justify-content: center;
+  }
+
+  .home-actions {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .home-title {
+    font-size: 2.25rem;
+  }
+
+  .home-subtitle {
+    font-size: 1rem;
+    gap: 0.35rem;
+  }
+
+  .home-description {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    margin-bottom: 1.75rem;
+  }
+
+  .home-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-socials {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .home-container {
+    padding: 1.2rem 0.75rem;
+    gap: 1.25rem;
+  }
+
+  .home-img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .home-description {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    padding: 0.9rem 1.4rem;
+  }
 }
