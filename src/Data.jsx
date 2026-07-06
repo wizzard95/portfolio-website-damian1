@@ -31,6 +31,9 @@ import SkillsImg31 from "./assets/pgsql-logo.svg";
 import SkillsImg32 from "./assets/vue-logo.svg";
 import SkillsImg33 from "./assets/microsoft-sql-server.svg";
 import SkillsImg34 from "./assets/jest-logo.svg";
+import SkillsImg35 from "./assets/logo-django.svg";
+
+import projectImg0 from "./assets/portal-trabajo.png";
 
 import projectImg1 from "./assets/meEcommerce.png";
 import projectImg2 from "./assets/frontvue.png";
@@ -203,6 +206,13 @@ export const skill = [
   },
 
   {
+    img: SkillsImg35,
+    title: "Django",
+    level: "",
+    category: "BackendDev",
+  },
+
+  {
     id: 14,
     img: SkillsImg14,
     title: "Python",
@@ -317,6 +327,28 @@ export const skill = [
 export const portfolio = [
   {
     id: 1,
+    img: projectImg0,
+    title: "Los Ángeles Trabaja",
+    date: "junio 2026 – Presente(producción)",
+    description: `Portal de empleos full stack construido con
+     Django REST Framework y React. Implementa autenticación JWT con roles
+    (candidate/employer), CRUD de ofertas laborales, postulación con 
+    carga de CV en PDF, respuestas del empleador, notificaciones
+     con contador de postulaciones pendientes y borrado lógico por
+      visibilidad. Diseño mobile-first responsive con Tailwind CSS v4.
+       Desplegado en Render con Gunicorn, Whitenoise y PostgreSQL.`,
+    skills: [
+      SkillsImg35,
+      SkillsImg14,
+      skillsImg4,
+      skillsImg5,
+      SkillsImg31,
+      SkillsImg16,
+    ],
+    link: "https://portal-trabajo-front.onrender.com/jobs",
+  },
+  {
+    id: 2,
     img: projectImg1,
     title: "meEcommerce",
     date: "Mayo 2026 – Presente(producción)",
@@ -337,7 +369,7 @@ export const portfolio = [
     link: "https://frontend-ecomerce-ckdf.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     img: projectImg2,
     title: "Tienda Online VueJs",
     date: "Abril 2026 – Presente(producción)",
@@ -360,7 +392,7 @@ export const portfolio = [
     link: "https://front-vue-orcin.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     img: projectImg3,
     title: "FullGeo Topografía",
     date: "Marzo 2026",
