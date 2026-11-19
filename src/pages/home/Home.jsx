@@ -1,4 +1,4 @@
-import Cv from "../../pdf/cv-damian-acuña---dev.pdf";
+import Cv from "../../pdf/cv-damian-acuña--fsdev.pdf";
 import Profile from "../../assets/yo.jpeg";
 import { RiDownload2Line, RiMailLine } from "react-icons/ri";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
