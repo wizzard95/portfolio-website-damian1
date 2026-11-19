@@ -325,7 +325,7 @@ export const skill = [
 ];
 
 export const portfolio = [
-  {
+  /*  {
     id: 1,
     img: projectImg0,
     title: "Los Ángeles Trabaja",
@@ -346,7 +346,7 @@ export const portfolio = [
       SkillsImg16,
     ],
     link: "https://portal-trabajo-front.onrender.com/jobs",
-  },
+  }, */
   {
     id: 2,
     img: projectImg1,
